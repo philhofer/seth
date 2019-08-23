@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 )
 
 func client() *seth.Client {

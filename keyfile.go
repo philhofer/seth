@@ -14,7 +14,7 @@ import (
 	"hash"
 	"strings"
 
-	"github.com/newalchemylimited/seth/keccak"
+	"github.com/philhofer/seth/keccak"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/crypto/scrypt"
 )

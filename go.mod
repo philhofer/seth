@@ -1,4 +1,4 @@
-module github.com/newalchemylimited/seth
+module github.com/philhofer/seth
 
 go 1.12
 

@@ -6,8 +6,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/newalchemylimited/seth"
-	"github.com/newalchemylimited/seth/tevm"
+	"github.com/philhofer/seth"
+	"github.com/philhofer/seth/tevm"
 )
 
 //go:generate bindgen -b -c=Test -o generated.go compiletest.sol

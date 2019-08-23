@@ -13,7 +13,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 )
 
 // RateDigits is the decimal precision of a Rate,

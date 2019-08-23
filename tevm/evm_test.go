@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/newalchemylimited/seth"
-	"github.com/newalchemylimited/seth/cc"
+	"github.com/philhofer/seth"
+	"github.com/philhofer/seth/cc"
 )
 
 func tracefn(t *testing.T) func(s string, args ...interface{}) {

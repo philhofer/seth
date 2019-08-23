@@ -12,7 +12,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 )
 
 type callArgs struct {

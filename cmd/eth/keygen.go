@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 )
 
 var cmdkeygen = &cmd{

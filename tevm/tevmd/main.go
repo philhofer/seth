@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/newalchemylimited/seth"
-	"github.com/newalchemylimited/seth/tevm"
+	"github.com/philhofer/seth"
+	"github.com/philhofer/seth/tevm"
 )
 
 var addr string

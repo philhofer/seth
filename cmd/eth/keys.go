@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

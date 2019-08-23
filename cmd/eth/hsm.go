@@ -5,7 +5,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 )
 
 var hsms []seth.HSM

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 )
 
 func TestFilter(t *testing.T) {

@@ -16,7 +16,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/newalchemylimited/seth/ec"
+	"github.com/philhofer/seth/ec"
 )
 
 func main() {

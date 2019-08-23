@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 )
 
 var cmdcall = &cmd{

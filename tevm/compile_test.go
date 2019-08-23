@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 )
 
 func TestCompileAndRun(t *testing.T) {

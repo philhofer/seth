@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/newalchemylimited/seth/yubihsm"
+	"github.com/philhofer/seth/yubihsm"
 )
 
 func TestYubiHSM(t *testing.T) {

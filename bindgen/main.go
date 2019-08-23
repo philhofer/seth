@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 	"golang.org/x/tools/imports"
 )
 
@@ -78,7 +78,7 @@ func main() {
 	w := bytes.NewBuffer(nil)
 
 	fmt.Fprintf(w, "package %s\n\n", opkg)
-	fmt.Fprintf(w, "import (\n\t\"github.com/newalchemylimited/seth\"\n)\n\n")
+	fmt.Fprintf(w, "import (\n\t\"github.com/philhofer/seth\"\n)\n\n")
 
 	for i := range contracts {
 		c := bundle.Contract(contracts[i])

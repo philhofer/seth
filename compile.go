@@ -16,7 +16,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/newalchemylimited/seth/keccak"
+	"github.com/philhofer/seth/keccak"
 	"github.com/tinylib/msgp/msgp"
 )
 

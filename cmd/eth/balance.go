@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/newalchemylimited/seth"
-	"github.com/newalchemylimited/seth/cc"
+	"github.com/philhofer/seth"
+	"github.com/philhofer/seth/cc"
 )
 
 var cmdbal = &cmd{

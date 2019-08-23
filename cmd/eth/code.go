@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/newalchemylimited/seth"
+	"github.com/philhofer/seth"
 )
 
 var cmdcode = &cmd{

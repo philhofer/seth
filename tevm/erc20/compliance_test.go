@@ -3,8 +3,8 @@ package erc20
 import (
 	"testing"
 
-	"github.com/newalchemylimited/seth"
-	"github.com/newalchemylimited/seth/tevm"
+	"github.com/philhofer/seth"
+	"github.com/philhofer/seth/tevm"
 )
 
 func TestEthereumToken(t *testing.T) {

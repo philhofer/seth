@@ -8,8 +8,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/newalchemylimited/seth/ec"
-	"github.com/newalchemylimited/seth/keccak"
+	"github.com/philhofer/seth/ec"
+	"github.com/philhofer/seth/keccak"
 )
 
 var (
@@ -17,7 +17,7 @@ var (
 	params    = curve.Params()
 	order     = params.N
 	halforder = new(big.Int).Rsh(order, 1)
-	salt      = keccak.Sum512([]byte("github.com/newalchemylimited/seth/ec"))
+	salt      = keccak.Sum512([]byte("github.com/philhofer/seth/ec"))
 )
 
 // A Signature holds an ECDSA signature in Ethereum's compact representation.

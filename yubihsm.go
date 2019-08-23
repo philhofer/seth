@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/newalchemylimited/seth/yubihsm"
+	"github.com/philhofer/seth/yubihsm"
 )
 
 const ConnectorURL = "http://127.0.0.1:12345"

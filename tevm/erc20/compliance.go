@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/newalchemylimited/seth"
-	"github.com/newalchemylimited/seth/tevm"
+	"github.com/philhofer/seth"
+	"github.com/philhofer/seth/tevm"
 )
 
 type Token struct {
