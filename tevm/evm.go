@@ -288,6 +288,10 @@ func (s *gethState) AddRefund(v uint64) {
 	s.Refund += seth.Uint64(v)
 }
 
+func (s *gethState) SubRefund(v uint64) {
+	s.Refund -= seth.Uint64(v)
+}
+
 func (s *gethState) GetRefund() uint64 {
 	return uint64(s.Refund)
 }
@@ -297,6 +301,13 @@ func stateKey(addr *common.Address, hash *common.Hash) seth.Hash {
 	copy(v[:], addr[:])
 	copy(v[20:], hash[:])
 	return seth.HashBytes(v[:])
+}
+
+func (s *gethState) GetCommittedState(addr common.Address, hash common.Hash) common.Hash {
+	if s.Trace != nil {
+		s.Trace("GetCommittedState", addr.String(), hash.String())
+	}
+	panic("GetCommittedState unimplemented")
 }
 
 func (s *gethState) GetState(addr common.Address, hash common.Hash) common.Hash {
@@ -458,12 +469,13 @@ func (s *gethState) AddPreimage(h common.Hash, b []byte) {
 	s.Preimage.Insert(h[:], b)
 }
 
-func (s *gethState) ForEachStorage(addr common.Address, fn func(a, v common.Hash) bool) {
+func (s *gethState) ForEachStorage(addr common.Address, fn func(a, v common.Hash) bool) error {
 	if s.Trace != nil {
 		s.Trace("ForEachStorage", addr.String())
 	}
 	// It doesn't appear that the geth EVM actually uses this API.
 	panic("ForEachStorage not implemented")
+	return nil
 }
 
 // A Chain is a model of the state of the blockchain. The fields in this type
@@ -776,7 +788,8 @@ func (c *Chain) CreateAt(addr, sender *seth.Address, code []byte) error {
 	contract.CodeHash = crypto.Keccak256Hash(code)
 	contract.CodeAddr = (*common.Address)(addr)
 
-	ret, err := evm.Interpreter().Run(contract, nil)
+	static := false
+	ret, err := evm.Interpreter().Run(contract, nil, static)
 	if err != nil {
 		c.mu.Unlock()
 		return err
