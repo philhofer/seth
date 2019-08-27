@@ -176,7 +176,6 @@ func TestChainSerialization(t *testing.T) {
 
 // Test that creating a contract at an address works.
 func TestCreateAt(t *testing.T) {
-	t.Skip("busted")
 	t.Parallel()
 	chain := NewChain()
 

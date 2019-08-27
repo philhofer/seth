@@ -64,11 +64,15 @@ var theconfig = vm.Config{
 }
 
 var theparams = params.ChainConfig{
-	ChainID:        new(big.Int).SetInt64(5),
-	HomesteadBlock: new(big.Int),
-	EIP150Block:    new(big.Int),
-	EIP155Block:    new(big.Int),
-	EIP158Block:    new(big.Int),
+	ChainID:             new(big.Int).SetInt64(5),
+	HomesteadBlock:      new(big.Int),
+	ConstantinopleBlock: new(big.Int),
+	PetersburgBlock:     new(big.Int),
+	IstanbulBlock:       new(big.Int),
+	ByzantiumBlock:      new(big.Int),
+	EIP150Block:         new(big.Int),
+	EIP155Block:         new(big.Int),
+	EIP158Block:         new(big.Int),
 }
 
 // State database for the EVM.
